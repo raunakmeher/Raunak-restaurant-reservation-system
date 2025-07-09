@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.hero {
+  background-image: url('/imageshome.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-content h1 span {
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.hero-content p {
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #1c1c1c;
+}
+
+.location-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.location-section h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.flag {
+  height: 32px;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #6e6e6e;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.location-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.location-card::after {
+  content: '›';
+  float: right;
+  font-size: 20px;
+  color: #999;
+}
+
+.location-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px 10px;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1c1c1c;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.footer-column {
+  flex: 1 1 180px;
+  margin: 10px 0;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.footer-column ul li {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  text-decoration: underline;
+}
+
+.social-icons span {
+  font-size: 22px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.app-buttons img {
+  width: 130px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+}
+
+.logout-btn {
+  background: #e03546;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.logout-btn:hover {
+  background: #c52d3d;
+}
+
+.booking-actions {
+  margin-top: 8px;
+}
+.booking-actions button {
+  margin-right: 8px;
+  background: #e03546;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.booking-actions button:hover {
+  background: #c52d3d;
+}
+.edit-booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.edit-booking-form input,
+.edit-booking-form select {
+  padding: 4px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.edit-booking-form button {
+  background: #e03546;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.edit-booking-form button:hover {
+  background: #c52d3d;
+}
